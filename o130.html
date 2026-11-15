@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Tangerine|Caveat" rel="stylesheet">
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>HAAS!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Pictures/logo3.png" width="90" height="60" class="d-inline-block align-top rounded" alt="M3Design"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="o100.html">O100</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="o110.html">O110</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="o120.html">O120</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">O130</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="o21001.html">O21001</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="o21003.html">O21003</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="o21005.html">O21005</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Повезани Web site-ови
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/operate/">Управљачка јединица: Sinumerik Operate Turn</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/heidenhain/">Управљачка јединица: Heidenhain</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/cnc_programiranje/">CNC програмирање</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">CAD/CAM програмирање глодалица и струга</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- navbar -->
+    <!-- container -->
+    <div class="container">
+      <!-- Content here -->
+      <div>
+        <h1>Израда техничко-технолошке документације</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-11 col-lg-10">
+            <ul class="nav nav-tabs" id="st_me" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="crtez_model-tab" data-bs-toggle="tab" data-bs-target="#crtez_model" type="button" role="tab" aria-controls="crtez_model" aria-selected="true">Цртеж и моделирање</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="G_f_je-tab" data-bs-toggle="tab" data-bs-target="#G_f_je" type="button" role="tab" aria-controls="G_f_je" aria-selected="true">Опис G функција</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="zadatak-tab" data-bs-toggle="tab" data-bs-target="#zadatak" type="button" role="tab" aria-controls="zadatak" aria-selected="false">Задатак</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="O130_CAM-tab" data-bs-toggle="tab" data-bs-target="#O130_CAM" type="button" role="tab" aria-controls="O130_CAM" aria-selected="false">CAM</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="O130_TabContent">
+              <div class="tab-pane fade show active" id="crtez_model" role="tabpanel" aria-labelledby="crtez_model-tab">
+                <div class="accordion" id="modeliranje_O130">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="crtez_O130">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_crtez_O130" aria-expanded="true" aria-controls="collapse_crtez_O130">
+                        Цртеж:
+                      </button>
+                    </h2>
+                    <div id="collapse_crtez_O130" class="accordion-collapse collapse show" aria-labelledby="crtez_O130" data-bs-parent="#modeliranje_O130">
+                      <div class="accordion-body">
+                        <img src="Pictures/Crtezi/O130.jpg" width="100%" alt="Цртеж модела">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="slike_O130">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_slike_O130" aria-expanded="true" aria-controls="collapse_slike_O130">
+                        Слике изратка:
+                      </button>
+                    </h2>
+                    <div id="collapse_slike_O130" class="accordion-collapse collapse" aria-labelledby="slike_O130" data-bs-parent="#modeliranje_O130">
+                      <div class="accordion-body">
+                        <div id="carousel_sw_tutorial_O130_slike" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="../CAD_CAM_programiranje_glodalica/Pictures/Carousel/O130/O130_slike_1.jpg" class="d-block w-100" alt="Израдак 2021">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../CAD_CAM_programiranje_glodalica/Pictures/Carousel/O130/O130_slike_2.jpg" class="d-block w-100" alt="Израдак 2026">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../CAD_CAM_programiranje_glodalica/Pictures/Carousel/O130/O130_slike_3.jpg" class="d-block w-100" alt="Израдак 2026">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../CAD_CAM_programiranje_glodalica/Pictures/Carousel/O130/O130_slike_4.jpg" class="d-block w-100" alt="Израдак 2026">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../CAD_CAM_programiranje_glodalica/Pictures/Carousel/O130/O130_slike_5.jpg" class="d-block w-100" alt="Израдак 2026">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../CAD_CAM_programiranje_glodalica/Pictures/Carousel/O130/O130_slike_6.jpg" class="d-block w-100" alt="Израдак 2026">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../CAD_CAM_programiranje_glodalica/Pictures/Carousel/O130/O130_slike_7.jpg" class="d-block w-100" alt="Израдак 2026">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel_sw_tutorial_O130_slike" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="mic_O130">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_mic_O130" aria-expanded="true" aria-controls="collapse_mic_O130">
+                        Моделирање и израда цртежа:
+                      </button>
+                    </h2>
+                    <div id="collapse_mic_O130" class="accordion-collapse collapse" aria-labelledby="mic_O130" data-bs-parent="#modeliranje_O130">
+                      <div class="accordion-body">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/FjcXyH_gMDs?si=C8kdkKR97H33YN3e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="G_f_je" role="tabpanel" aria-labelledby="G_f_je-tab">
+                <div class="accordion" id="Opis_G_f_ja">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="G0_G1">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_G0_G1" aria-expanded="true" aria-controls="collapse_G0_G1">
+                        Функције: G0, G1
+                      </button>
+                    </h2>
+                    <div id="collapse_G0_G1" class="accordion-collapse collapse show" aria-labelledby="G0_G1" data-bs-parent="#Opis_G_f_ja">
+                      <div class="accordion-body">
+                        <img src="Pictures/G0_G1.jpg" width="100%" alt="Опис функција G0, G1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="G2">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_G2" aria-expanded="true" aria-controls="collapse_G2">
+                        Функција: G2
+                      </button>
+                    </h2>
+                    <div id="collapse_G2" class="accordion-collapse collapse" aria-labelledby="G2" data-bs-parent="#Opis_G_f_ja">
+                      <div class="accordion-body">
+                        <img src="Pictures/G2.jpg" width="100%" alt="Опис функције G2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="G3">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_G3" aria-expanded="true" aria-controls="collapse_G3">
+                        Функција: G3
+                      </button>
+                    </h2>
+                    <div id="collapse_G3" class="accordion-collapse collapse" aria-labelledby="G3" data-bs-parent="#Opis_G_f_ja">
+                      <div class="accordion-body">
+                        <img src="Pictures/G3.jpg" width="100%" alt="Опис функције G3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="G12_G13">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_G12_G13" aria-expanded="true" aria-controls="collapse_G12_G13">
+                        Функције: G12, G13
+                      </button>
+                    </h2>
+                    <div id="collapse_G12_G13" class="accordion-collapse collapse" aria-labelledby="G12_G13" data-bs-parent="#Opis_G_f_ja">
+                      <div class="accordion-body">
+                        <img src="Pictures/G12_G13.jpg" width="100%" alt="Опис функција G12, G13">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="G83">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_G83" aria-expanded="true" aria-controls="collapse_G83">
+                        Функција: G83
+                      </button>
+                    </h2>
+                    <div id="collapse_G83" class="accordion-collapse collapse" aria-labelledby="G83" data-bs-parent="#Opis_G_f_ja">
+                      <div class="accordion-body">
+                        <div id="carousel_G83" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_G83" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_G83" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Pictures/Carousel/O100/G83.jpg" class="d-block w-100" alt="Опис функције G83">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O100/G83_1.jpg" class="d-block w-100" alt="Опис функције G83">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_G83" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel_G83" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="G84">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_G84" aria-expanded="true" aria-controls="collapse_G84">
+                        Функција: G84
+                      </button>
+                    </h2>
+                    <div id="collapse_G84" class="accordion-collapse collapse" aria-labelledby="G84" data-bs-parent="#Opis_G_f_ja">
+                      <div class="accordion-body">
+                        <img src="Pictures/G84.jpg" width="100%" alt="Опис функције G84">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="G70_G71_G72">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_G70_G71_72" aria-expanded="true" aria-controls="collapse_G70_G71_72">
+                        Функције: G70, G71, G72
+                      </button>
+                    </h2>
+                    <div id="collapse_G70_G71_72" class="accordion-collapse collapse" aria-labelledby="G70_G71_G72" data-bs-parent="#Opis_G_f_ja">
+                      <div class="accordion-body">
+                        <img src="Pictures/G70_G71_G72.jpg" width="100%" alt="Опис функција G70, G71, G72">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="zadatak" role="tabpanel" aria-labelledby="zadatak-tab">
+                <div class="accordion" id="postavka_zadatka">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="slika_zadatka">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_slika_zadatka" aria-expanded="true" aria-controls="collapse_slika_zadatka">
+                        Поставка:
+                      </button>
+                    </h2>
+                    <div id="collapse_slika_zadatka" class="accordion-collapse collapse show" aria-labelledby="slika_zadatka" data-bs-parent="#postavka_zadatka">
+                      <div class="accordion-body">
+                        <img src="Pictures/O130_postavka.jpg" width="100%" alt="Поставка задатка">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="slika_biljeske">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_slika_biljeske" aria-expanded="true" aria-controls="collapse_slika_biljeske">
+                        Додатна објашњења на поставци:
+                      </button>
+                    </h2>
+                    <div id="collapse_slika_biljeske" class="accordion-collapse collapse" aria-labelledby="slika_biljeske" data-bs-parent="#postavka_zadatka">
+                      <div class="accordion-body">
+                        <img src="Pictures/O130_biljeske.jpg" width="100%" alt="Додатна објашњења руком писана на слици">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="slike_avgust_2026_CNC_operater">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_slike_avgust_2026_CNC_operater" aria-expanded="true" aria-controls="collapse_slike_avgust_2026_CNC_operater">
+                        Обука полазника за оператера на CNC машинама за обраду метала 18.5.2026. год. до 26.9.2026. год.:
+                      </button>
+                    </h2>
+                    <div id="collapse_slike_avgust_2026_CNC_operater" class="accordion-collapse collapse" aria-labelledby="slike_avgust_2026_CNC_operater" data-bs-parent="#postavka_zadatka">
+                      <div class="accordion-body">
+                        <div id="carousel_25_26_9_2026" class="carousel carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                            <button type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Pictures/Carousel/O130/CNC_operater_1.jpg" class="d-block w-100" alt="Моделирање">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_2.jpg" class="d-block w-100" alt="Алати и прибор">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_3.jpg" class="d-block w-100" alt="Алати и прибор">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_4.jpg" class="d-block w-100" alt="Стављање уља за резање">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_5.jpg" class="d-block w-100" alt="Обрада контуре">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_6.jpg" class="d-block w-100" alt="Монтажа алата">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_7.jpg" class="d-block w-100" alt="Рад на машини">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_8.jpg" class="d-block w-100" alt="Бушење">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_9.jpg" class="d-block w-100" alt="Бушење">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_10.jpg" class="d-block w-100" alt="Мерење">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_11.jpg" class="d-block w-100" alt="Мерење">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_12.jpg" class="d-block w-100" alt="CNC машина">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_13.jpg" class="d-block w-100" alt="Обрада кружног џепа">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_14.jpg" class="d-block w-100" alt="Монтажа алата и урезивање навоја">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_15.jpg" class="d-block w-100" alt="Израдак">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_16.jpg" class="d-block w-100" alt="Контрола навоја">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CNC_operater_17.jpg" class="d-block w-100" alt="Заједничка фотографија">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel_25_26_9_2026" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="download">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_download" aria-expanded="true" aria-controls="collapse_download">
+                        Download докумената:
+                      </button>
+                    </h2>
+                    <div id="collapse_download" class="accordion-collapse collapse" aria-labelledby="download" data-bs-parent="#postavka_zadatka">
+                      <p>
+                        <a href="https://www.haascnc.com/content/dam/haascnc/en/service/manual/operator/english---mill-ngc---operator%27s-manual---2017.pdf">"HAAS" упутство - download</a>
+                      </p>
+                      <p>
+                        <a href="static/Zadatak_O130.doc">"Word"-ов документ, поставка - download</a>
+                      </p>
+                      <p>
+                        <a href="static/Zadatak_O130_resenje.pdf">"PDF" документ, решење - download</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="O130_CAM" role="tabpanel" aria-labelledby="O130_CAM-tab">
+                <p>
+                  У CAM модулима одговарајућих CAD пакета имамо могућност аутоматског генерисања G кода. Да бисмо разумели G код потребно нам је искуство ручног програмирања G кода.
+                </p>
+                <div class="accordion" id="sw_tutorial">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="carousel_O130_CAM">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_carousel_O130_CAM" aria-expanded="true" aria-controls="collapse_carousel_O130_CAM">
+                        Кратки подсетник:
+                      </button>
+                    </h2>
+                    <div id="collapse_carousel_O130_CAM" class="accordion-collapse collapse" aria-labelledby="carousel_O130_CAM" data-bs-parent="#sw_tutorial">
+                      <div class="accordion-body">
+                        <div id="carousel_sw_tutorial" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                            <button type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Pictures/Carousel/O130/CAM_1.jpg" class="d-block w-100" alt="Команда: SOlidWorks CAM">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_2.jpg" class="d-block w-100" alt="Подешавања у команди: Customize">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_3.jpg" class="d-block w-100" alt="Избор машине">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_4.jpg" class="d-block w-100" alt="Избор постпроцесора">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_5.jpg" class="d-block w-100" alt="Избор магацина алата">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_6.jpg" class="d-block w-100" alt="Дефинисање координатног почетка">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_7.jpg" class="d-block w-100" alt="Дефинисање припремка">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_8.jpg" class="d-block w-100" alt="Праћење туторијала">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_9.jpg" class="d-block w-100" alt="Провера склопа">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_10.jpg" class="d-block w-100" alt="Визуелизација">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_11.jpg" class="d-block w-100" alt="Display State">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_12.jpg" class="d-block w-100" alt="Display State">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/O130/CAM_13.jpg" class="d-block w-100" alt="Display State">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel_sw_tutorial" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="O130_CAM_setup_tutorial">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_CAM_setup_tutorial" aria-expanded="true" aria-controls="collapse_O130_CAM_setup_tutorial">
+                        Дефинисање машине, постпроцесора, припремка и координатног система:
+                      </button>
+                    </h2>
+                    <div id="collapse_O130_CAM_setup_tutorial" class="accordion-collapse collapse show" aria-labelledby="O130_CAM_setup_tutorial" data-bs-parent="#sw_tutorial">
+                      <div class="accordion-body">
+                        <div class="card ratio ratio-16x9">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="O130_Extract_MF_tutorial">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_Extract_MF_tutorial" aria-expanded="true" aria-controls="collapse_O130_Extract_MF_tutorial">
+                        Extract Machinable Features, Generate Operation Plan for Open Pocket Feature:
+                      </button>
+                    </h2>
+                    <div id="collapse_O130_Extract_MF_tutorial" class="accordion-collapse collapse" aria-labelledby="O130_Extract_MF_tutorial" data-bs-parent="#sw_tutorial">
+                      <div class="accordion-body">
+                        <div class="card ratio ratio-16x9">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="O130_GOP_CP_H_tutorial">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_GOP_CP_H_tutorial" aria-expanded="true" aria-controls="collapse_O130_GOP_CP_H_tutorial">
+                        Generate Operation Plan for Circular Pocket and Hole Group Feature:
+                      </button>
+                    </h2>
+                    <div id="collapse_O130_GOP_CP_H_tutorial" class="accordion-collapse collapse" aria-labelledby="O130_GOP_CP_H_tutorial" data-bs-parent="#sw_tutorial">
+                      <div class="accordion-body">
+                        <div class="card ratio ratio-16x9">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="O130_Post_Process_tutorial">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_Post_Process_tutorial" aria-expanded="true" aria-controls="collapse_O130_Post_Process_tutorial">
+                        Post Process...:
+                      </button>
+                    </h2>
+                    <div id="collapse_O130_Post_Process_tutorial" class="accordion-collapse collapse" aria-labelledby="O130_Post_Process_tutorial" data-bs-parent="#sw_tutorial">
+                      <div class="accordion-body">
+                        <div class="card ratio ratio-16x9">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <nav class="card-header" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">&copy; Slobodan Ivković</li>
+                  <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/slobodan-ivkovic-a08326ba"><img src="Pictures/Icons/linkedin.png" alt="linkedin logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://twitter.com/slobodan_iv"><img src="Pictures/Icons/twitter.png" alt="twitter logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://www.youtube.com/user/Mickijedini"><img src="Pictures/Icons/youtube.png" alt="youtube logo"></a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
