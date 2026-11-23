@@ -1,0 +1,234 @@
+%
+O00130
+(9.7.2026 god maid kuckovic)
+G17 G40 G80 G90
+G55
+
+(Glodanje konture sa vecim precnikom alata T5 FI10 tj FI11)
+T5 M6 (glodalo FI10 tj FI11)
+M3 S500
+G0 X-50 Y-80
+G0 Z10 G43 H05
+G1 X-13 Y-63 D05 G41 F200 
+G1 Z-0.25 F77
+M98 P131
+G1 Z-0.5 F77
+M98 P131
+G1 Z-0.75 F77
+M98 P131
+G1 Z-1 F77
+M98 P131 
+G1 Z-1.25 F77
+M98 P131
+G1 Z-1.5 F77
+M98 P131
+G1 Z-1.75 F77
+M98 P131
+G1 Z-2 F77
+M98 P131
+G1 Z-2.25 F77
+M98 P131
+G1 Z-2.5 F77
+M98 P131
+G1 Z-2.75 F77
+M98 P131
+G1 Z-3 F77
+M98 P131
+G1 Z-3.25 F77
+M98 P131
+G1 Z-3.5 F77
+M98 P131
+G1 Z-3.75 F77
+M98 P131
+G1 Z-4 F77
+M98 P131
+G1 Z-4.25 F77
+M98 P131
+G1 Z-4.5 F77
+M98 P131 
+G1 Z-4.75 F77
+M98 P131
+G1 Z-5 F77
+M98 P131
+
+G1 Z5
+G0 Z150
+G00 Y90
+G01 Y80 G40
+
+
+(Glodalo konture sa tacnim precnikom alata T4)
+T4 M6 (Glodalo FI6)
+M3 S800
+G0 X-50 Y-80
+G0 Z2 G43 H04
+G1 X-13 Y-63 D04 G41 F200
+G1 Z-0.25 F95
+M98 P131
+G1Z-0.5F95 
+M98P131;
+G1Z-0.75F95 
+M98P131;
+G1 Z-1 F95
+M98 P131
+G1Z-1.25F95 
+M98P131;
+G1 Z-1.5 F95
+M98 P131 
+G1Z-1.75F95 
+M98P131;
+G1 Z-2 F95
+M98 P131
+G1Z-2.25F95 
+M98P131;
+G1 Z-2.5 F95
+M98 P131
+G1Z-2.75F95 
+M98P131;
+G1 Z-3 F95
+M98 P131
+G1Z-3.25F95 
+M98P131;
+G1 Z-3.5 F95
+M98 P131
+G1Z-3.75F95 
+M98P131;
+G1 Z-4 F95
+M98 P131
+G1Z-4.25F95 
+M98P131;
+G1 Z-4.5 F95
+M98 P131 
+G1Z-4.75F95 
+M98P131;
+G1 Z-5 F95
+M98 P131
+G1 Z5
+G0 Z150
+G00 Y90
+G01 Y88 G40
+
+
+T1 M6
+(Zabusivanje centralnog otvora-obaranje ivice 1mm 45st fi8)
+M3 S380
+G00 X0 Y0
+G0 Z10 G43 H1
+(Centralni otvor pred glodanje kruznog dzepa)
+(Ciklus zabusivanja - busenja sa izvlacenjem strugotine krajnja granica Q0.5 F10 ali ne preporucuje se)
+G98 G83 Z-4 Q0.3 F7 R2
+G80
+(Otvori po kruznom rasporedu-obaranje ivice 1mm 45st fi8 zabusivanje)
+(Ciklus zabusivanja - busenja sa izvlacenjem strugotine krajnja granica Q0.5 F10 ali ne preporucuje se)
+G98 G83 Z-4 Q0.3 F7 R2L0
+G70I16J0L8;
+G80
+G1 Z10 G90
+
+
+T2 M6 (Busenje otvora FI5.5, za FI5 S700 F30)
+M3 S630
+G00 X0 Y0
+G0 Z10 G43 H2
+(Centralni otvor pred glodanje kruznog dzepa)
+G98 G83 Z-8 Q1.2 F30 R2
+G80
+G1 Z10 G90
+(Otvori po kruznom rasporedu)
+G98 G83 Z-13 Q1.2 F24 R2 L0
+G70 I16 J0 L8
+G1 Z10 G90 G80
+G0 Z100 G90
+
+
+(Glodanje kruznog dzepa)
+T4 M6 (glodalo FI6)
+M3 S850
+G0 X0 Y0 G90
+G0 Z10 G43 H04
+G1 Z0 F70
+G12 G91 Z-0.25 L12 K10 I1.5 Q2 F50 D4
+G1 G90 Z5
+G4 P4000
+G0 Z150
+
+(Obaranje ivive konture faza -1 45st fi8 tj fi6 ili fi2 T6)
+T6 M6
+M3 S600
+G0 X-50 Y-80
+G0 Z2 G43 H06
+G1 X-13 Y-63 D06 G41 F200
+G1 Z-1.25 F70
+M98 P131
+G1 Z-1.5 F60
+M98 P131
+G1 Z-1.75 F55
+M98 P131
+G1 Z-2 F50
+M98 P131
+G01 X-15 Y-70 G40 
+G1 Z5 
+
+(Obaranje ivice konture faza -2mm 45st fi8 tj fi6 ili fi2 T7)
+T7 M6
+M3 S600
+G0 X-50 Y-80
+G0 Z2 G43 H07
+G1 X-13 Y-63 D07 G41 F200
+G1 Z-2.25 F40
+M98 P131
+G1 Z-2.5 F35
+M98 P131
+G1 Z-2.75 F30
+M98 P131
+G1 Z-3 F25
+M98 P131
+G01 X-15 Y-70 G40 
+G1 Z5 
+G0 Z150
+
+
+(Obaranje ivice kruznog dzewpa faza -1mm 45 stfi8 tj fi6 ili fi2 T6)
+T6 M6
+M3 S600
+G0 X0 Y0
+G0 Z5 G43 H06
+G1 X5 Y 0 D06 G41 F200
+G1 Z-1.25 F70
+G1 X-10 Y0 F70
+G3 X-10 Y0 I10  J0 
+G1 Z-1.5 F60
+G3 X-10 Y0 I10  J0 
+G1 Z-1.75 F55
+G3 X-10 Y0 I10  J0 
+G1 Z-2 F50
+G3 X-10 Y0 I10  J0 
+G1 X-5 Y0 
+G1 X0 Y0 G40
+G1 Z10
+G0 Z150
+
+
+(Urezivanje navoja ureznika M6)
+T3 M06 (Ureznik M6)
+M03 S20
+G00 X0 Y0 
+G00 Z10 G43 H03
+G1 Z2 F200
+G98 G84 Z-4 F20 R2 X0 Y0 L0
+G70 I16 J0 L8
+G80
+G4 P2000
+G98 G84 Z-7 F20 R2 X0 Y0 L0
+G70 I16 J0 L8
+G80
+G4 P2000
+
+G98 G84 Z-9 F20 R2 X0 Y0 L0
+G70 I16 J0 L8
+G80
+G00 Z150
+M30
+
+
+%
